@@ -12,34 +12,33 @@
 
 
 <body>
-    <div class="text-center my-5">
-    <h1 class="d-none d-lg-block">Bienvenue dans le SHI-FU-MI</h1>
-    <p class="h1 d-lg-none">Bienvenue dans le</p>
-    <p class="h1 d-lg-none">SHI-FU-MI</p>
-    <p id="nbvictoire">Nombre de victoire: 0</p>
-    <p id="scoreboard">Meilleur score: 0</p>
-    <p id="vOuD" class="h1">Victoire ou défaite ?</p>
-</div>
+    <div class="text-center my-lg-5 my-2">
+        <h1 class="d-none d-lg-block">Bienvenue dans le SHI-FU-MI</h1>
+        <p class="h1 d-lg-none">Bienvenue dans le</p>
+        <p class="h1 d-lg-none">SHI-FU-MI</p>
+        <p id="nbvictoire">Nombre de victoire: 0</p>
+        <p id="scoreboard">Meilleur score: 0</p>
+        <p id="vOuD" class="h1">Victoire ou défaite ?</p>
+    </div>
 
-    <div class="container text-center mt-5">
-        <div class="row my-5">
+    <div class="container text-center mt-lg-5 mt-2">
+        <div class="row my-lg-5 my-3">
             <div class="col">
                 <img src="assets/img/mystere.png" alt="Choix de l'adversaire" class="adversaire" id="adversaire">
             </div>
         </div>
         <div class="row">
             <div class="col-lg-4">
-                <img src="assets/img/Pierre.png" alt="La pierre" class="choix" onclick="choix(0)">
+                <img src="assets/img/Pierre.png" alt="La pierre" class="choix" onclick="choix(0)" id="pierre">
             </div>
             <div class="col-lg-4">
-                <img src="assets/img/Feuille.png" alt="La feuille" class="choix" onclick="choix(1)">
+                <img src="assets/img/Feuille.png" alt="La feuille" class="choix" onclick="choix(1)" id="papier">
             </div>
             <div class="col-lg-4">
-                <img src="assets/img/Ciseaux.png" alt="Le ciseaux" class="choix" onclick="choix(2)">
+                <img src="assets/img/Ciseaux.png" alt="Le ciseaux" class="choix" onclick="choix(2)" id="ciseaux">
             </div>
         </div>
     </div>
-
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
