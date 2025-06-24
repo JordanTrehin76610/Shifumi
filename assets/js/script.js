@@ -24,7 +24,7 @@ function choix(jeu) {
     choixadversaire()
     choixjoueur = jeu
     tambour.play()
-    setTimeout(() => revelation(), 4000)
+    setTimeout(() => revelation(), 4500)
 }
 
 function revelation() {
