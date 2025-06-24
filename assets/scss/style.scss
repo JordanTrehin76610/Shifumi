@@ -1,0 +1,20 @@
+.adversaire {
+    width: 30%;
+}
+
+.choix {
+    width: 75%;
+}
+
+
+
+
+@media screen and (max-width: 425px) {
+    .adversaire {
+    width: 50%;
+}
+
+.choix {
+    width: 40%;
+}
+}
