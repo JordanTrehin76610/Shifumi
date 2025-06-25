@@ -6,18 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shi-fu-mi</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 
 
-<body>
+<body id="body" style="color:black;background-color: #ffffff;">
     <audio id="tambour">
         <source src="assets/audio/tambour.mp3" type="audio/mp3">
     </audio>
     <audio id="solution">
         <source src="assets/audio/solution.mp3" type="audio/mp3">
     </audio>
+    <audio id="success">
+        <source src="assets/audio/sucess.mp3" type="audio/mp3">
+    </audio>
+
     <div class="text-center my-lg-5 my-2">
         <h1 class="d-none d-lg-block">Bienvenue dans le SHI-FU-MI</h1>
         <p class="h1 d-lg-none">Bienvenue dans le</p>
@@ -45,6 +50,22 @@
             </div>
         </div>
     </div>
+
+    <div class="nuitJour">
+        <button onclick="Nuit()" class="nuit"><i class="bi bi-moon-fill"></i></button><button onclick="Jour()"
+            class="jour"><i class="bi bi-brightness-high-fill"></i></button>
+    </div>
+
+    <div id="win3">Débutant <br> Gagner 3 fois de suite</div>
+    <div id="win5">Chaud bouillant<br> Gagner 5 fois de suite</div>
+    <div id="win10">Mentaliste<br> Gagner 10 fois de suite</div>
+    <div id="play1">Virgin<br> Jouer pour la 1ère fois</div>
+    <div id="play2">On remet ça ?<br> Jouer pour la 2ème fois</div>
+    <div id="play3">Fidélité<br> Jouer pour la 3ème fois</div>
+    <div id="pierre5">Comme un golem<br> Jouer la pierre 5 fois de suite</div>
+    <div id="papier5">Noyé car papier<br> Jouer le papier 5 fois de suite</div>
+    <div id="ciseaux5">Presque sixeaux<br> Jouer le ciseaux 5 fois de suite</div>
+
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
