@@ -16,6 +16,7 @@ let ciseauxJouer = 0
 let secret = 0
 
 function choixadversaire() {
+    console.log(fun)
     if (fun == 20) {
         adversaire = 3
         secret = secret + 1
@@ -26,6 +27,7 @@ function choixadversaire() {
 }
 
 function choix(jeu) {
+    fun = Math.floor(Math.random() * 100)
     if (partie == 1) {
         play1()
         secret = secret + 1
