@@ -115,6 +115,9 @@ function battle() {
         document.getElementById("nbvictoire").textContent = `Nombre de victoire: ${nbvictoire}`
         document.getElementById("vOuD").textContent = `Défaite`
         document.getElementById("vOuD").style.color = 'red'
+        if (adversaire == 3) {
+            puit()
+        }
     }
     papier.style.pointerEvents = 'auto'
     pierre.style.pointerEvents = 'auto'
@@ -220,6 +223,16 @@ function ciseaux5() {
     ciseaux5.className = "show";
 
     setTimeout(function () { ciseaux5.className = ciseaux5.className.replace("show", ""); }, 3000);
+
+    success.play()
+}
+
+function puit() {
+    var puit = document.getElementById("puit");
+
+    puit.className = "show";
+
+    setTimeout(function () { puit.className = puit.className.replace("show", ""); }, 3000);
 
     success.play()
 }

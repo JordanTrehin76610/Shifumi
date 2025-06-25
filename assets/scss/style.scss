@@ -37,7 +37,7 @@ body {
     font-size: 1.5rem;
 }
 
-#win3, #win5, #win10, #play1, #play2, #play3, #pierre5, #papier5, #ciseaux5 {
+#win3, #win5, #win10, #play1, #play2, #play3, #pierre5, #papier5, #ciseaux5, #puit {
   visibility: hidden; /* Hidden by default. Visible on click */
   min-width: 250px; /* Set a default minimum width */
   max-width: 300px;
@@ -53,7 +53,7 @@ body {
   bottom: 30px; /* 30px from the bottom */
 }
 
-#win3.show, #win5.show, #win10.show, #play1.show, #play2.show, #play3.show, #pierre5.show, #papier5.show, #ciseaux5.show {
+#win3.show, #win5.show, #win10.show, #play1.show, #play2.show, #play3.show, #pierre5.show, #papier5.show, #ciseaux5.show, #puit.show {
   visibility: visible; /* Show the snackbar */
   /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
   However, delay the fade out process for 2.5 seconds */
