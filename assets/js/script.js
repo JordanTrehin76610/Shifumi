@@ -13,10 +13,12 @@ let partie = 1
 let pierreJouer = 0
 let papierJouer = 0
 let ciseauxJouer = 0
+let secret = 0
 
 function choixadversaire() {
     if (fun == 20) {
         adversaire = 3
+        secret = secret + 1
     } else {
         adversaire = Math.floor(Math.random() * 3) //L'adversaire définis à l'avance son choix entre 0 et 2 (3 propositions)
     }
@@ -26,12 +28,18 @@ function choixadversaire() {
 function choix(jeu) {
     if (partie == 1) {
         play1()
+        secret = secret + 1
+        document.getElementById("secret").textContent = `Succès: ${secret}/10`
     }
     if (partie == 2) {
         play2()
+        secret = secret + 1
+        document.getElementById("secret").textContent = `Succès: ${secret}/10`
     }
     if (partie == 3) {
         play3()
+        secret = secret + 1
+        document.getElementById("secret").textContent = `Succès: ${secret}/10`
     }
     partie = partie + 1
     papier.style.pointerEvents = 'none'
@@ -58,12 +66,18 @@ function choix(jeu) {
     }
     if (pierreJouer == 5) {
         pierre5()
+        secret = secret + 1
+        document.getElementById("secret").textContent = `Succès: ${secret}/10`
     }
     if (papierJouer == 5) {
         papier5()
+        secret = secret + 1
+        document.getElementById("secret").textContent = `Succès: ${secret}/10`
     }
     if (ciseauxJouer == 5) {
         ciseaux5()
+        secret = secret + 1
+        document.getElementById("secret").textContent = `Succès: ${secret}/10`
     }
     tambour.play()
     setTimeout(() => revelation(), 3500)
@@ -96,12 +110,18 @@ function battle() {
         nbvictoire > scoreboard ? scoreboard = nbvictoire : ""
         if (scoreboard == 3) {
             successWin3()
+            secret = secret + 1
+            document.getElementById("secret").textContent = `Succès: ${secret}/10`
         }
         if (scoreboard == 5) {
             successWin5()
+            secret = secret + 1
+            document.getElementById("secret").textContent = `Succès: ${secret}/10`
         }
         if (scoreboard == 10) {
             successWin10()
+            secret = secret + 1
+            document.getElementById("secret").textContent = `Succès: ${secret}/10`
         }
         document.getElementById("nbvictoire").textContent = `Nombre de victoire: ${nbvictoire}`
         document.getElementById("scoreboard").textContent = `Meilleur score: ${scoreboard}`
@@ -117,6 +137,8 @@ function battle() {
         document.getElementById("vOuD").style.color = 'red'
         if (adversaire == 3) {
             puit()
+            secret = secret + 1
+            document.getElementById("secret").textContent = `Succès: ${secret}/10`
         }
     }
     papier.style.pointerEvents = 'auto'

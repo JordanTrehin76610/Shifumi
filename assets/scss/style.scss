@@ -3,6 +3,10 @@
     max-height: 18rem;
 }
 
+#secret {
+    margin-left: 50px;
+}
+
 .choix {
     width: 75%;
 }
@@ -38,48 +42,107 @@ body {
     font-size: 1.5rem;
 }
 
-#win3, #win5, #win10, #play1, #play2, #play3, #pierre5, #papier5, #ciseaux5, #puit {
-  visibility: hidden; /* Hidden by default. Visible on click */
-  min-width: 250px; /* Set a default minimum width */
-  max-width: 300px;
-  margin-left: -125px; /* Divide value of min-width by 2 */
-  background-color: #333; /* Black background color */
-  color: #fff; /* White text color */
-  text-align: center; /* Centered text */
-  border-radius: 2px; /* Rounded borders */
-  padding: 16px; /* Padding */
-  position: fixed; /* Sit on top of the screen */
-  z-index: 1; /* Add a z-index if needed */
-  left: 50%; /* Center the snackbar */
-  bottom: 30px; /* 30px from the bottom */
+#win3,
+#win5,
+#win10,
+#play1,
+#play2,
+#play3,
+#pierre5,
+#papier5,
+#ciseaux5,
+#puit {
+    visibility: hidden;
+    /* Hidden by default. Visible on click */
+    min-width: 250px;
+    /* Set a default minimum width */
+    max-width: 300px;
+    margin-left: -125px;
+    /* Divide value of min-width by 2 */
+    background-color: #333;
+    /* Black background color */
+    color: #fff;
+    /* White text color */
+    text-align: center;
+    /* Centered text */
+    border-radius: 2px;
+    /* Rounded borders */
+    padding: 16px;
+    /* Padding */
+    position: fixed;
+    /* Sit on top of the screen */
+    z-index: 1;
+    /* Add a z-index if needed */
+    left: 50%;
+    /* Center the snackbar */
+    bottom: 30px;
+    /* 30px from the bottom */
 }
 
-#win3.show, #win5.show, #win10.show, #play1.show, #play2.show, #play3.show, #pierre5.show, #papier5.show, #ciseaux5.show, #puit.show {
-  visibility: visible; /* Show the snackbar */
-  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+#win3.show,
+#win5.show,
+#win10.show,
+#play1.show,
+#play2.show,
+#play3.show,
+#pierre5.show,
+#papier5.show,
+#ciseaux5.show,
+#puit.show {
+    visibility: visible;
+    /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
   However, delay the fade out process for 2.5 seconds */
-  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
 @-webkit-keyframes fadein {
-  from {bottom: 0; opacity: 0;}
-  to {bottom: 30px; opacity: 1;}
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
 }
 
 @keyframes fadein {
-  from {bottom: 0; opacity: 0;}
-  to {bottom: 30px; opacity: 1;}
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
 }
 
 @-webkit-keyframes fadeout {
-  from {bottom: 30px; opacity: 1;}
-  to {bottom: 0; opacity: 0;}
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
 }
 
 @keyframes fadeout {
-  from {bottom: 30px; opacity: 1;}
-  to {bottom: 0; opacity: 0;}
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
 }
 
 
@@ -93,30 +156,34 @@ body {
     }
 
     .nuitJour {
-    margin-left: 5%;
-}
+        margin-left: 5%;
+    }
 
-.nuit {
-    border-radius: 0rem;
-    background-color: black;
-    width: 3rem;
-    height: 3rem;
-    margin-right: 0rem;
-    font-size: 1.5rem;
-}
+    .nuit {
+        border-radius: 0rem;
+        background-color: black;
+        width: 3rem;
+        height: 3rem;
+        margin-right: 0rem;
+        font-size: 1.5rem;
+    }
 
-.jour {
-    border-radius: 0rem;
-    background-color: white;
-    width: 3rem;
-    height: 3rem;
-    margin-right: 0rem;
-    font-size: 1.5rem;
-}
+    .jour {
+        border-radius: 0rem;
+        background-color: white;
+        width: 3rem;
+        height: 3rem;
+        margin-right: 0rem;
+        font-size: 1.5rem;
+    }
 
-.adversaire {
-    width: 30%;
-    height: 6.5rem;
-    width: 9rem;
-}
+    .adversaire {
+        width: 30%;
+        height: 6.5rem;
+        width: 9rem;
+    }
+
+    #secret {
+        margin-left: 0px;
+    }
 }
